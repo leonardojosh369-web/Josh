@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: radial-gradient(circle, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    color: #333;
+    line-height: 1.6;
+}
+
+.sticky-header {
+    position: fixed;
+    top: 100;
+    width: 100%;
+   background-color: #240080;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 1000;
+    border-bottom: 3px solid #8B4513; /* Brown accent for earthy feel */
+}
+
+.sticky-header h1 {
+    margin: 0;
+    font-size: 2rem;
+    color: #ffffff; /* Dark text for contrast on gold */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #008080; /* Teal for links, inspired by shadows/nature */
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #8B4513; /* Brown on hover for consistency */
+}
+
+section {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 5rem; /* Account for sticky header */
+}
+
+#home {
+    text-align: center;
+    padding-left: 1rem;
+}
+
+#home h2 {
+    color: #FFD700; /* Gold for heading */
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.art-piece {
+    text-align: center;
+    border: 2px solid #008080; /* Teal border */
+    border-radius: 5px;
+    padding: 0.5rem;
+    background-color: #f9f9f9; /* Light gray background for contrast */
+}
+
+.art-piece img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.art-piece h3 {
+    margin: 0.5rem 0;
+    color: #FFD700; /* Gold for titles */
+}
+
+#contact {
+    text-align: center;
+    border-top: 3px solid #8B4513; /* Brown accent */
+    padding-top: 1rem;
+}
+
+#contact h2 {
+    color: #008080; /* Teal for heading */
+}
+
+#contact ul {
+    list-style: none;
+    padding: 0;
+}
+
+#contact li {
+    margin: 0.5rem 0;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #f4f4f4;
+    color: #000000;
+    border-top: 2px solid #FFD700; /* Gold accent */
+}
+
+@media (max-width: 768px) {
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+}
